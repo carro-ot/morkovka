@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title> Course work </title>
+	<link rel="stylesheet" href="../sass/css/style.css">
+	<meta http-equiv="Content type" content="text/html;chatset-UTF-8" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width">
+
+</head>
+
+<body>
+
+	<div class="video-background">
+		<video autoplay muted loop id="background-video">
+			<source src="../sass/video/f91129af6583b9ec79adebddfb7b9e26.mp4" type="video/mp4">
+		</video>
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container container">
+				<div class="header__row">
+					<a href="#" class="header__logo"></a>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li><a href="#" class="menu__link">Обитатели</a></li>
+								<li><a href="#services" class="menu__link">Услуги</a></li>
+								<li><a href="#price" class="menu__link">Цены</a></li>
+								<li><a href="#" class="menu__link">Отзывы</a></li>
+								<li><a href="#infrastructure" class="menu__link">Инфаструктура</a></li>
+								<li><a href="#contacts__map" class="menu__link">Карта</a></li>
+								<li><a href="#contacts-container" class="menu__link">Контакты</a></li>
+								<li><a class="menu__link" href="tel:+15551234567">+15551234567</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+
+		</header>
+		<div class="banner">
+			<div class="banner__container container">
+				<h1 class="banner__title">Крупнейший океанариум</h1>
+				<p class="banner__text">Более 12 000 обитателей со всего Мирового океана под одним куполом океанариума</p>
+				<a href="" class="banner__btn btn">Купить билет</a>
+			</div>
+		</div>
+		<section id="services" class="services">
+			<H3 class="services__title">Услуги</H3>
+			<div class="services__container">
+				<div class="services__image-block">
+					<!-- Крупное изображение -->
+					<img src="img/img1.jpeg" alt="" class="main-image" id="mainImage">
+					<!-- Миниатюры -->
+
+				</div>
+				<!-- Текст и кнопка -->
+				<div class="services__text-block">
+					<p class="services__content">ФОТОСЕССИЯ В МОРСКИХ ГЛУБИНАХ</p>
+					<p class="services__text">Каждый день в океанариуме работают профессиональные фотографы, которые
+						генерируют тысячи идей для создания уникальных образов в подводном мире.Проплывающие над головой акулы
+						и скаты, притягательная палитра морской глубины, все это создает пространство для фотосъемки.</p>
+					<button class="services__btn">Узнать стоимость</button>
+					<div class="thumbnails">
+						<img src="img/img1.jpeg" alt="" class="thumbnail active" data-index="0">
+						<img src="img/img2.jpeg" alt="" class="thumbnail" data-index="1">
+						<img src="img/img3.jpeg" alt="" class="thumbnail" data-index="2">
+						<img src="img/img5.jpeg" alt="" class="thumbnail" data-index="3">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="dates">
+			<label class="dates__start" for="start">Выберите дату:</label>
+			<input class="dates__data" type="date" id="start" name="trip-start" min="2024-10-10" max="2025-12-31" />
+		</div>
+
+		<section class="tickets">
+			<h3 class="tickets__title">Тип билета</h3>
+			<div class="tickets__row">
+				<div class="tickets__block">
+					<div class="tickets__name">Взрослый/Студенческий</div>
+					<div class="tickets__price">800 руб.</div>
+					<div class="tickets__btn">+</div>
+					<div class="tickets__value">0</div>
+					<div class="tickets__btn2">-</div>
+				</div>
+				<div class="tickets__block">
+					<div class="tickets__name">Школьный</div>
+					<div class="tickets__price">450 руб.</div>
+					<div class="tickets__btn">+</div>
+					<div class="tickets__value">0</div>
+					<div class="tickets__btn">-</div>
+				</div>
+				<div class="tickets__block">
+					<div class="tickets__name">Пенсионеры</div>
+					<div class="tickets__price">400 руб.</div>
+					<div class="tickets__btn">+</div>
+					<div class="tickets__value">0</div>
+					<div class="tickets__btn">-</div>
+				</div>
+				<div class="tickets__block">
+					<div class="tickets__name">Детский</div>
+					<div class="tickets__price">300 руб.</div>
+					<div class="tickets__btn">+</div>
+					<div class="tickets__value">0</div>
+					<div class="tickets__btn">-</div>
+				</div>
+			</div>
+			<div class="tickets__column">
+				<h3 class="tickets__title">Контактная информация</h3>
+				<form class="tickets-form">
+					<input type="text" placeholder="Email">
+					<input type="text" placeholder="Ваш телефон">
+				</form>
+				<button type="submit" class="tickets__button">Отправить</button>
+			</div>
+		</section>
+
+
+		<!-- 
+		<section id="price" class="price">
+			<h3 class="price__title">Цены</h3>
+			<div class="price__row">
+				<div class="price__block">
+					<h3 class="price__name">Входной билет</h3>
+					<div class="price__list">
+						<p class="price__price">300р</p>
+						<p class="price__description">Дети(от 4 до 7 лет)</p>
+						<p class="price__price">800р</p>
+						<p class="price__description">Взрослые</p>
+						<p class="price__price">450р</p>
+						<p class="price__description">Школьники</p>
+						<p class="price__price">800р</p>
+						<p class="price__description">Студенты</p>
+						<p class="price__price">400р</p>
+						<p class="price__description">Пенсионеры</p>
+						<div class="price__line"></div>
+						<p class="price__notion">Бесплатно: </p>
+						<p class="price__remark"> Дети до 3-х лет
+							Контактные зоны
+						</p>
+						<button class="price__button">Купить билет</button>
+					</div>
+				</div>
+				<div class="price__block">
+					<h3 class="price__name">Экскурсии</h3>
+					<div class="price__list">
+						<p class="price__price">300р/чел</p>
+						<p class="price__description">Групповые (3-7 человек) </p>
+						<p class="price__price">500р/чел</p>
+						<p class="price__description">Индивидуальные(1-2 человека)</p>
+						<p class="price__price">100р/чел</p>
+						<p class="price__description">Детские</p>
+						<div class="price__line"></div>
+						<p class="price__notion">Дополнительно:</p>
+						<p class="price__remark"> Необходимо приобрести входной билет</p>
+
+						<button class="price__button">Записаться</button>
+					</div>
+
+				</div>
+				<div class="price__block">
+					<h3 class="price__name">Аудиогид</h3>
+					<div class="price__list">
+						<p class="price__price">200р</p>
+						<p class="price__description">Программа (1 час) </p>
+						<p class="price__price">100р</p>
+						<p class="price__description">Программа (30 мин)</p>
+						<p class="price__price">150р</p>
+						<p class="price__description">Детская программа</p>
+						<p class="price__price">300р</p>
+						<p class="price__description">Аудиоэнциклопедия</p>
+						<div class="price__line"></div>
+						<p class="price__notion">Дополнительно:</p>
+						<p class="price__remark">Необходимо приобрести входной билет</p>
+
+						<button class="price__button">Купить</button>
+					</div>
+
+				</div>
+			</div>
+		</section> -->
+
+		<section id="price" class="price">
+			<h3 class="price__title">Цены</h3>
+			<div class="price__row">
+				<div class="price__block">
+					<h3 class="price__name">Входной билет</h3>
+					<div class="price__list">
+						<div class="top">
+							<div class="list-row">
+								<p class="price__description">Дети(от 4 до 7 лет)</p>
+								<p class="price__price">300р</p>
+							</div>
+							<div class="list-row">
+								<p class="price__description">Взрослые</p>
+								<p class="price__price">800р</p>
+							</div>
+							<div class="list-row">
+								<p class="price__description">Школьники</p>
+								<p class="price__price">450р</p>
+							</div>
+							<div class="list-row">
+								<p class="price__description">Студенты</p>
+								<p class="price__price">800р</p>
+							</div>
+							<div class="list-row">
+								<p class="price__description">Пенсионеры</p>
+								<p class="price__price">400р</p>
+							</div>
+						</div>
+						<div class="bottom">
+							<p class="price__notion">Бесплатно: </p>
+							<p class="price__remark"> Дети до 3-х лет<br>Контактные зоны</p>
+							<button class="price__button">Купить билет</button>
+						</div>
+
+					</div>
+
+				</div>
+				<div class="price__block">
+					<h3 class="price__name">Экскурсии</h3>
+					<div class="price__list">
+						<div class="top">
+							<div class="list-row">
+								<p class="price__description">Групповые (3-7 человек) </p>
+								<p class="price__price">300р/чел</p>
+							</div>
+							<div class="list-row">
+								<p class="price__description">Индивидуальные(1-2 человека)</p>
+								<p class="price__price">500р/чел</p>
+							</div>
+							<div class="list-row">
+								<p class="price__description">Детские</p>
+								<p class="price__price">100р/чел</p>
+							</div>
+						</div>
+						<div class="bottom">
+							<p class="price__notion">Дополнительно:</p>
+							<p class="price__remark"> Необходимо приобрести входной билет</p>
+							<button class="price__button">Записаться</button>
+						</div>
+					</div>
+
+				</div>
+				<div class="price__block">
+					<h3 class="price__name">Аудиогид</h3>
+					<div class="price__list">
+						<div class="top">
+							<div class="list-row">
+								<p class="price__description">Программа (1 час) </p>
+								<p class="price__price">200р</p>
+							</div>
+							<div class="list-row">
+								<p class="price__description">Программа (30 мин)</p>
+								<p class="price__price">100р</p>
+							</div>
+							<div class="list-row">
+								<p class="price__description">Детская программа</p>
+								<p class="price__price">150р</p>
+							</div>
+							<div class="list-row">
+								<p class="price__description">Аудиоэнциклопедия</p>
+								<p class="price__price">300р</p>
+							</div>
+						</div>
+						<div class="bottom">
+							<p class="price__notion">Дополнительно:</p>
+							<p class="price__remark">Необходимо приобрести входной билет</p>
+							<button class="price__button">Купить</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section id="infrastructure" class="infrastructure">
+			<div class="infrastructure__img">
+				<div class="infrastructure__row">
+					<div class="infrastructure__block">
+						<i class='bx bx-coffee'></i>
+						<h3 class="infrastructure__title">Кафе и ресторан</h3>
+						<p class="infrastructure__text">Если вы проголодались на территории находится кафе "Глубина" и
+							ресторан-бар "Капля" распологают не только панорамным видом, но и разнообразной и интересной
+							кухней.
+						</p>
+					</div>
+					<div class="infrastructure__block">
+						<i class='bx bx-handicap'></i>
+						<h3 class="infrastructure__title">Безбарьерная среда</h3>
+						<p class="infrastructure__text">Пандусы, специальные лифты, лестничный подъемник с откидной
+							платформой.
+						</p>
+					</div>
+					<div class="infrastructure__block">
+						<i class='bx bx-gift'></i>
+						<h3 class="infrastructure__title">Сувенирный магазин</h3>
+						<p class="infrastructure__text">Широкий ассортимент ярких и функциональных сувениров с элементами
+							подводного мира.
+						</p>
+					</div>
+					<div class="infrastructure__block">
+						<i class='bx bx-camera'></i>
+						<h3 class="infrastructure__title">Фотозоны</h3>
+						<p class="infrastructure__text">В каждой тематической зоне расположены секции, где работают
+							профессиональные фотографы.
+						</p>
+					</div>
+					<div class="infrastructure__block">
+						<i class='bx bxs-baby-carriage'></i>
+						<h3 class="infrastructure__title">Сервис</h3>
+						<p class="infrastructure__text">Гардероб принимает самокаты, велосипеды, коляски, ролики и т.д.
+							Имеется
+							комната для родителей и детей и зона отдыха.
+						</p>
+					</div>
+				</div>
+			</div>
+			<button class="infrastructure__btn btn">Смотреть схему океанариума</button>
+		</section>
+
+		<p class="contacts__title">Карты</p>
+		<section id="contacts__map" class="contacts__map">
+			<div style="position:relative;overflow:hidden;"><a
+					href="https://yandex.ru/maps/org/okeanarium/25769210168/?utm_medium=mapframe&utm_source=maps"
+					style="color:#eee;font-size:12px;position:absolute;top:0px;">Океанариум</a><a
+					href="https://yandex.ru/maps/35/krasnodar/category/oceanarium/184106340/?utm_medium=mapframe&utm_source=maps"
+					style="color:#eee;font-size:12px;position:absolute;top:14px;">Океанариум в Краснодаре</a><iframe
+					src="https://yandex.ru/map-widget/v1/?display-text=%D0%9E%D0%BA%D0%B5%D0%B0%D0%BD%D0%B0%D1%80%D0%B8%D1%83%D0%BC&ll=39.047093%2C45.029253&mode=search&oid=25769210168&ol=biz&sll=38.971733%2C45.035185&sspn=0.103720%2C0.040197&text=%7B%22text%22%3A%22%D0%9E%D0%BA%D0%B5%D0%B0%D0%BD%D0%B0%D1%80%D0%B8%D1%83%D0%BC%22%2C%22what%22%3A%5B%7B%22attr_name%22%3A%22category_id%22%2C%22attr_values%22%3A%5B%22184106340%22%5D%7D%5D%7D&z=13.8"
+					width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+			</div>
+		</section>
+		<section id="contacts-container" class="contacts-container">
+			<p class="contacts__title">Контакты</p>
+			<div class="contacts__row">
+				<div class="contacts__column">
+					<h3 class="contacts__name">Адрес</h3>
+					<p class="contacts__info">Рандомный/Условный адресс</p>
+					<h3 class="contacts__name">Режим работы</h3>
+					<p class="contacts__info">Ежедневно 10:00-22:00</p>
+					<h3 class="contacts__name">Санитарный день</h3>
+					<p class="contacts__info">Последний понедельник месяца</p>
+					<h3 class="contacts__name">Кассы работают</h3>
+					<p class="contacts__info">Ежедневно 10:00-21:00</p>
+					<h3 class="contacts__name">Телефон</h3>
+					<p class="contacts__info">+79999999999</p>
+				</div>
+				<div class="contacts__column">
+					<form class="contacts-form">
+						<input type="text" placeholder="Ваше имя">
+						<input type="text" placeholder="Ваш телефон">
+						<textarea placeholder="Сообщение"></textarea>
+					</form>
+				</div>
+
+			</div>
+		</section>
+
+		<button class="contacts__btn">Заказать звонок</button>
+		<footer>
+			<div class="footer-container">
+				<div class="footer-content">
+					<p>© 2024 <strong>Tech Solutions</strong>. Все права защищены.</p>
+					<p>Ваш надежный партнер в технологиях и инновациях.</p>
+					<div class="contact-info">
+						<p>Телефон: <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+						<p>Email: <a href="mailto:info@techsolutions.com">info@techsolutions.com</a></p>
+					</div>
+					<div class="social-media">
+						<p>Следите за нами:</p>
+						<a href="https://facebook.com" target="_blank">Facebook</a> |
+						<a href="https://twitter.com" target="_blank">Twitter</a> |
+						<a href="https://instagram.com" target="_blank">Instagram</a>
+					</div>
+					<div class="footer-links">
+						<a href="/privacy-policy">Политика конфиденциальности</a> |
+						<a href="/terms-of-service">Условия использования</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<script src="./js/script.js"></script>
+
+</body>
